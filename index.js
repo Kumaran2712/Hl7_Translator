@@ -53,8 +53,8 @@ app.post("/explain", async(req,res)=>{
 
 Your job:
 
-1. First check if the input is a real HL7 message.
-2. If it is NOT valid HL7 → ONLY reply: "The provided input is not a valid HL7 message."
+1.Always assume the input is HL7 and give the best explanation possible.
+2.Never say invalid. Just interpret whatever is available.
 3. If it IS valid:
    - Explain the message in warm, simple, conversational English.
    - Talk as if you're explaining it to a friend who knows nothing about healthcare IT.

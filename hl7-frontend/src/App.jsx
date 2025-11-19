@@ -30,7 +30,7 @@ export default function App() {
     setIsAnalyzing(true);
     
     try {
-      const res = await fetch(import.meta.env.VITE_BACKEND_URL + "/explain",{
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/explain`,{
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ hl7: hl7Input })

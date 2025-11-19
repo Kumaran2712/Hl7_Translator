@@ -1,0 +1,9 @@
+# global ignores
+node_modules/
+.env
+.DS_Store
+
+# frontend
+hl7-frontend/node_modules/
+frontend/dist/
+

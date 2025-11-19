@@ -8,7 +8,7 @@ dotenv.config();
 
 
 const app = express();
-app.set("trust proxy", 1;
+app.set("trust proxy", 1);
 app.use(express.json());
 app.use(cors({origin:process.env.FRONTEND_ORIGIN || "http://localhost:5173"}));
 
